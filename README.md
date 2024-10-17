@@ -1,11 +1,13 @@
 # esp32-c3-1-wire-usb
 Mesure simplement la température avec des sondes 1-wire et l'affiche sur la console série
 
-zf241017.1553
+zf241017.1632
 
 
 ## Buts
 Mesure simplement la température avec des sondes 1-wire et l'affiche sur la console série.
+
+![](https://raw.githubusercontent.com/zuzu59/esp32-c3-1-wire-usb/refs/heads/master/photo_2024-10-17_16-23-10.jpg)
 
 
 ## Problématique
@@ -14,6 +16,8 @@ Le système de domotique utilisé (Siemens) pour commander le système de chauff
 
 ## Moyens
 Pour cela on va utiliser un MCU esp32-c3 super mini, sans la partie WIFI (en mode Arduino), pour lire des sondes de températures 1-wire DS18B20 et sortir sur le port USB les valeurs des sondes.
+
+![](https://raw.githubusercontent.com/zuzu59/esp32-c3-1-wire-usb/refs/heads/master/photo_2024-10-17_16-23-01.jpg)
 
 
 ### Câblage des sondes de température
