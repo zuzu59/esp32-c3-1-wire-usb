@@ -1,4 +1,4 @@
-// zf241017.1106
+// zf241017.1534
 
 // lib pour la sonde de température 1-wire DS18B20
 
@@ -81,17 +81,15 @@ void readSensor(){
   for(int i=0;i<numberOfDevices; i++){
     // Search the wire for address
     if(sensors.getAddress(tempDeviceAddress, i)){
-      // Output the device ID
-      Serial.print("Temperature for device: ");
-      Serial.println(i,DEC);
-      // Print the data
+      // Graphe sur l'Arduino IDE les courbes des mesures
+      Serial.print("sensor");
+      Serial.print(i,DEC);
+      Serial.print(":");
       float tempC = sensors.getTempC(tempDeviceAddress);
-      Serial.print("Temp C: ");
       Serial.print(tempC);
-      Serial.print(" Temp F: ");
-      Serial.println(DallasTemperature::toFahrenheit(tempC)); // Converts tempC to Fahrenheit
+      Serial.print(",");
     }
   }
-  delay(5000);
+  Serial.println("");
 }
 

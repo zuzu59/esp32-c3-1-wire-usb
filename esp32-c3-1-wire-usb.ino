@@ -3,10 +3,10 @@
 //
 // ATTENTION, ce code a été testé sur un esp32-c3 super mini. Pas testé sur les autres boards !
 //
-#define zVERSION        "zf241017.1136"
+#define zVERSION        "zf241017.1525"
 #define zHOST           "esp32-c3-1-wire-usb"     // ATTENTION, tout en minuscule
 
-int zDelay1Interval =   30000;                    // Délais en mili secondes pour la boucle loop
+int zDelay1Interval =   3000;                    // Délais en mili secondes pour la boucle loop
 
 /*
 Utilisation:
